@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo.AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-950 text-white min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="w-full py-6 px-12 flex justify-between items-center bg-slate-900">
+        <!-- Logo / Title -->
+        <h1 class="text-3xl font-extrabold text-indigo-400 tracking-wide">Memo.AI</h1>
+
+        <!-- Navigation -->
+        <nav class="flex gap-8 text-lg font-medium">
+            <a href="/client/src/components/note.html" class="hover:text-indigo-400 transition">Notes</a>
+            <a href="/client/src/components/flashcards.html" class="hover:text-indigo-400 transition">Flashcards</a>
+            <a href="/client/src/components/quiz.html" class="hover:text-indigo-400 transition">Quiz</a>
+            <a href="/client/src/components/about.html" class="hover:text-indigo-400 transition">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center justify-center flex-grow text-center px-6 min-h-screen animate-spin">
+        <h2 class="font-serif text-9xl md:text-9xl font-bold mb-6">WE HAVE THE NOTES</h2>
+        <p class="text-lg text-gray-300">
+            Created by
+            <span class="font-semibold text-indigo-300">Baron</span>
+            <span class="font-semibold text-indigo-300">Sean</span>
+            <span class="font-semibold text-indigo-300">Mareiya</span>
+            <span class="font-semibold text-indigo-300">Klod</span>
+        </p>
+    </main>
+
+    <div class="h-[20vh]"></div>
+
+    <!-- Grid Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-16">
+        <!-- Box 1: Upload PDF/Docs -->
+        <div
+            class="bg-slate-800 p-10 rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-indigo-800 hover:shadow-2xl cursor-pointer flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Upload PDF or Docs</h3>
+            <p class="text-gray-300 mb-6">Choose a PDF or Word document to upload.</p>
+            <label
+                class="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#6366f1]">
+                Upload File
+                <input type="file" accept=".pdf,.doc,.docx" class="hidden">
+            </label>
+        </div>
+
+        <!-- Box 2: Insert Audio -->
+        <div
+            class="bg-slate-800 p-10 rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-indigo-800 hover:shadow-2xl cursor-pointer flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Insert Audio</h3>
+            <p class="text-gray-300 mb-6">Upload an audio file (MP3, WAV, etc).</p>
+            <label
+                class="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#6366f1]">
+                Upload Audio
+                <input type="file" accept="audio/*" class="hidden">
+            </label>
+        </div>
+
+        <!-- Box 3: Insert Video -->
+        <div
+            class="bg-slate-800 p-10 rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-indigo-800 hover:shadow-2xl cursor-pointer flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Insert Video</h3>
+            <p class="text-gray-300 mb-6">Upload a video file (MP4, AVI, etc).</p>
+            <label
+                class="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#6366f1]">
+                Upload Video
+                <input type="file" accept="video/*" class="hidden">
+            </label>
+        </div>
+
+        <!-- Box 4: Paste URL -->
+        <div
+            class="bg-slate-800 p-10 rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-indigo-800 hover:shadow-2xl cursor-pointer flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Paste URL Link</h3>
+            <p class="text-gray-300 mb-6">Insert a link and generate results.</p>
+            <input type="text" placeholder="Paste your link here..."
+                class="w-full px-4 py-2 rounded-xl bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-4">
+            <button
+                class="px-6 py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md transition duration-300 hover:shadow-[0_0_15px_#6366f1]">
+                Generate
+            </button>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
