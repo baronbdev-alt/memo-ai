@@ -1,0 +1,22 @@
+{
+    "input_text": "Genshin Impact began development as early as late January 2017, with an initial team of 120 people, which grew to 400 by the end of that year, and reached 700 by February 2021. miHoYo revealed the game in June 2019 at E3 2019. The game was developed using the Unity Engine.",
+    "number_of_questions": 4,
+    "questions": [
+        {
+            "question": "Genshin Impact began development in late January 2017.",
+            "answer": true
+        },
+        {
+            "question": "By the end of 2017, the Genshin Impact development team had grown to 500 people.",
+            "answer": false
+        },
+        {
+            "question": "miHoYo revealed Genshin Impact at E3 2019 in July.",
+            "answer": false
+        },
+        {
+            "question": "The Unity Engine was used for the development of Genshin Impact.",
+            "answer": true
+        }
+    ]
+}
